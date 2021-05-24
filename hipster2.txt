@@ -27,4 +27,20 @@ answered Apr 7 '17 at 14:30
 
 Riz
 44144 silver badges66 bronze badges
-it doesn't actually sync... unless i have to restart the server every time? – oldboy Aug
+it doesn't actually sync... unless i have to restart the server every time? – v class="contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/dashboard/index.html">Apache Friends</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+          <a href="#">
+            <span>Menu</span>
+          </a>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><a href="/applications.html">oldboy Aug
