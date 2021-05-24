@@ -1,0 +1,30 @@
+
+u are correct, I think i jumped the gun a little. While Bash can access windows files, Windows cannot copy files into the Linux Sub System directory. (it can copy then, but Bash cannot see them as it preserves the files permissions) When i got bash installed, I though the most logical thing was to move my projects from one Linux Environment to another (Attempt to bin off Cwygin), And its this that started me down the route of headaches. I have configured my Bashrc now to have a starting directory of my previous Linux environment now and working from there. Thank you for your response. – Dave Hamilton Jun 6 '16 at 15:20 
+Wait, how do you get /mnt/d to show up? for instance, when I connect a phone via MTP it shows up under a path like "This PC\PhoneName" but there is no drive letter associated with it. – Michael Dec 20 '16 at 16:49
+Symlinks work if you don't have a trailing slash. Also, you need to have files on the Windows side of the file system to do things like run Django projects locally and access them in the browser – Zags Feb 15 '17 at 19:24 
+but the linux files don't update when i modify the windows files?!?! – oldboy Aug 11 '17 at 22:42
+Note that a) slash must be forward slash and b) drive letter is case sensitive. – Ivan Chau Oct 22 '20 at 4:00
+Add a comment
+
+29
+
+@scottt732 answered beautifully.
+
+Just a tip for developers who would work in Windows and would like to access those files in Linux Subsystem real quick. You can use symbolic links.
+
+For example If you are working on a project in d:/projects/web-project, you can create a symlink at location /var/www/web-project and all the files you change in windows will be readily available to be accessed in Linux Bash.
+
+For this you will do use ln command like this
+
+ln -s  /mnt/d/projects/web-project  /var/www/web-project
+In above line /mnt/d was meant to be your d drive on windows. Setup your Apache virtual host to this path and you are ready to go.
+
+Share
+Improve this answer
+Follow
+edited May 3 '17 at 6:59
+answered Apr 7 '17 at 14:30
+
+Riz
+44144 silver badges66 bronze badges
+it doesn't actually sync... unless i have to restart the server every time? – oldboy Aug
