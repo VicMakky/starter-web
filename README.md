@@ -6,4 +6,4 @@
 
 ## Deployment
 
-## How To Copntribute
+## How To Contribute
